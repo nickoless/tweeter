@@ -30,6 +30,6 @@ textarea {
 }
 
 .counter {
-  float: right; 
-  font-style: italic;
+    float: right; 
+    font-style: italic;
 }
