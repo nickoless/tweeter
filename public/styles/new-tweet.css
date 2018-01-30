@@ -1,3 +1,35 @@
-.container .new-tweet {
-    background-color: blue;  
+.new-tweet {
+    height: 145px;
+    margin: 0 2em;
+    background-color: #e9e9f0; 
+    border-style:solid;
+    border-width: thin;
+    border-radius: 5px;
+    border-color: #bdb3b3; 
+}
+
+.new-tweet h2 {
+   margin: 10px;
+   border-bottom: 1px solid #181717
+}
+
+form {
+    height: 90px;
+    margin: 0px 10px;
+}
+
+textarea {
+   margin-top: 5px;
+   padding-top: 5px; 
+   padding-left: 5px;
+   width: 100%
+}
+
+.button {
+    float: left;
+}
+
+.counter {
+  float: right; 
+  font-style: italic;
 }
