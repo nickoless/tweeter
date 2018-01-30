@@ -15,11 +15,23 @@ html {
  */
 
 body {
+  font-family: 'Roboto Condensed', sans-serif;
   margin: 0;
   color: #244751;
-  background-color: #eee;
+  /* background-color: #eee; */
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+* {
+  overflow: auto;
+}
+
+main {
+  padding-top:140px;
+  width: 450px;
+  margin: 0 auto;
+  /* background-color: white; */
+ }
