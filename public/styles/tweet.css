@@ -7,11 +7,17 @@
     border-color: #bdb3b3; 
 }
 
+.tweet:hover {
+    border-color: #5c5c5c
+}
 .tweet header {
-/*     line-height: 75px; */
     right: 0;
     left: 0;
     background-color:#ececec
+}
+
+.tweet:hover header {
+    background-color:#acacac
 }
 
 .tweet .profile {
@@ -20,7 +26,6 @@
     margin: 10px;
     border-radius: 5px;
     float: left;
-   
 }
 
 .tweet .username, .handle {
@@ -45,7 +50,20 @@
 .tweet footer {
     padding: 10px;
     border-top: 1px solid #bdb3b3;
-    font-size: 80%
-/*     margin: 10px 10px; */
-/*     float: bottom; */
+    font-size: 90%
 }
+
+.tweet footer .icons {
+    opacity: 0;
+    float: right;
+    height: 20px;
+    width: 20x;
+}
+
+.tweet:hover footer .icons {
+    opacity: 100;
+}
+
+    
+/* Set up images in original tweet footer, opacity:0 */
+/* Separate hover state with opacity @ 100 */
