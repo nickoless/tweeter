@@ -1,0 +1,30 @@
+.tweet {
+    height: 250px;
+    margin: 0 2em; 
+    border-style:solid;
+    border-width: thin;
+    border-radius: 5px;
+    border-color: #bdb3b3; 
+}
+
+.tweet header {
+/*     margin: 10px 0; */
+    right: 0;
+    left: 0;
+    background-color:aliceblue
+}
+
+.tweet h2 {
+    margin: 10px 10px;
+    s
+}
+
+.tweet article {
+    margin: 40px 20px;
+}
+
+.tweet footer {
+    border-top: 1px solid black;
+    margin: 10px
+    float: bottom;
+}
