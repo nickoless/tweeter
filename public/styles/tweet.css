@@ -1,6 +1,6 @@
 .tweet {
-    height: 250px;
-    margin: 0 2em; 
+    height: auto;
+    margin: 2em; 
     border-style:solid;
     border-width: thin;
     border-radius: 5px;
@@ -8,15 +8,34 @@
 }
 
 .tweet header {
-/*     margin: 10px 0; */
+/*     line-height: 75px; */
     right: 0;
     left: 0;
-    background-color:aliceblue
+    background-color:#ececec
 }
 
-.tweet h2 {
-    margin: 10px 10px;
-    s
+.tweet .profile {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+    border-radius: 5px;
+    float: left;
+   
+}
+
+.tweet .username, .handle {
+    display: inline-block;
+}
+
+.tweet .username {
+    margin: 10px;
+}
+
+.tweet .handle {
+    margin: 0;
+    float: right;
+    padding-top: 15px;
+    padding-right: 16px;
 }
 
 .tweet article {
@@ -24,7 +43,9 @@
 }
 
 .tweet footer {
-    border-top: 1px solid black;
-    margin: 10px
-    float: bottom;
+    padding: 10px;
+    border-top: 1px solid #bdb3b3;
+    font-size: 80%
+/*     margin: 10px 10px; */
+/*     float: bottom; */
 }
