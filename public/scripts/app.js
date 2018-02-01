@@ -74,7 +74,6 @@ $(document).ready(function() {
     let $footerRetweet = $("<img>").attr("src", "/images/retweet.png");
     let $footerLike = $("<img>").attr("src", "/images/like.png")  ;   
 
-
     $tweet.append($header, $p, $footer);
     $header.append($img, $h2 ,$headerSpan);
     $footer.append($footerSpan, $footerFlag, $footerRetweet, $footerLike);
@@ -84,6 +83,18 @@ $(document).ready(function() {
 
   renderTweets(data);
 
+  $(".new-tweet form").on("submit", function(event) {
+    event.preventDefault();
+    var formData = $(this).serialize();
+    $.post('/tweets', formData).done(function() {
+      console.log('test');
+    });
+  });
+
+
+
+
+  
 });
 
 
