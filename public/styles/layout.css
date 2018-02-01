@@ -30,7 +30,7 @@ body {
 }
 
 main {
-  height: 500px, auto;
+  height: auto;
   width: 450px;
   padding-top:140px;
   margin: 0 auto;
