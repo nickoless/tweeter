@@ -7,7 +7,7 @@ $( document ).ready(function() {
 
   $("#nav-bar").hide().fadeIn(1000);
 
-});
+});4
 
 
 
