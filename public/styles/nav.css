@@ -21,3 +21,21 @@
     font-size: 200%;
     line-height: 80px;
 }
+
+#nav-bar button {
+    height: 60px;
+    width: 120px;
+    margin-top: 10px;
+    padding: 0;    
+    float: right;
+    color: #00a087;
+    background-color: #e8fdff;
+    border-radius: 5px;
+    border: solid 1.5px black;
+}
+
+#nav-bar button:hover {
+    color:black;
+    background-color:white;
+    border-color: #015043
+}
