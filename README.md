@@ -6,7 +6,7 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Final Product
 
-!["Screenshot of the tweeter feed"](linkgoeshere)
+!["Screenshot of the tweeter feed"](https://github.com/nickoless/tweeter/blob/master/docs/tweeter-feed.png)
 
 ## Dependencies
 
