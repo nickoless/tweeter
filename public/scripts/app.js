@@ -7,7 +7,9 @@
 
 $(document).ready(function() {
 
-  // Function to reference time since submit - **Sky Sanders from Stack Overflow**
+  /* Function to reference time since submit - **Rob from Stack Overflow**
+  (https://stackoverflow.com/questions/3177836/how-to-format-time-since-xxx-e-g-4-minutes-ago-similar-to-stack-exchange-site)
+  */
 
   var timeSince = function(date) {
     if (typeof date !== 'object') {
