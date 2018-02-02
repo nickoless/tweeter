@@ -3,9 +3,17 @@
 // Basic express setup:
 
 const PORT          = 8080;
+const nodeSassMiddleware = require('node-sass-middleware')
 const express       = require("express");
 const bodyParser    = require("body-parser");
 const app           = express();
+
+app.use(nodeSassMiddleware({
+  src: path.join(__dirname, "sass"),
+  dest: path.join(__dirname, "public"),
+  debug: true,
+  outputStyle: "compressed"
+}));
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
@@ -42,5 +50,5 @@ MongoClient.connect(MONGODB_URI, (err, db) => {
 // Mount the tweets routes at the "/tweets" path prefix:
 
 app.listen(PORT, () => {
-  console.log("Example app listening on port " + PORT);
+  console.log("Tweeting to port " + PORT);
 });

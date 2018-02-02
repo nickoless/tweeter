@@ -16,6 +16,8 @@ $( document ).ready(function() {
     }
   });
 
+// resets counter on form submission
+
   $(".new-tweet form").on("submit", function(event) {
     $( ".counter").html(maxCount);
   });
