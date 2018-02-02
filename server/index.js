@@ -25,6 +25,7 @@ MongoClient.connect(MONGODB_URI, (err, db) => {
   const DataHelpers = require("./lib/data-helpers")(db);
   const tweetsRoutes = require("./routes/tweets")(DataHelpers);
   app.use("/tweets", tweetsRoutes);
+  
 });
 
 // The `data-helpers` module provides an interface to the database of tweets.
