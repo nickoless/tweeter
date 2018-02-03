@@ -32,8 +32,9 @@ body {
 
 main {
   height: auto;
-  width: 450px;
+  min-width: 450px;
   padding-top:140px;
   margin: 0 auto;
   background-color: white;
  }
+

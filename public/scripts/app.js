@@ -67,13 +67,13 @@ $(document).ready(function() {
     let $footer = $("<footer>");
     let timeStamp = (timeSince(tweetData.created_at) + " ago");
     let $footerSpan = $("<span>").text(timeStamp);
-    let $footerFlag =  $("<img>").attr("src", "/images/flag.png");
-    let $footerRetweet = $("<img>").attr("src", "/images/retweet.png");
-    let $footerLike = $("<img>").attr("src", "/images/like.png")  ;
+    let $footerHeart = $("<i>").addClass("far fa-heart", "icon");
+    let $footerFlag =  $("<i>").addClass("far fa-flag", "icon");
+    let $footerRetweet = $("<i>").addClass("fas fa-retweet", "icon");
 
     $tweet.append($header, $p, $footer);
     $header.append($img, $h2, $headerSpan);
-    $footer.append($footerSpan, $footerLike, $footerRetweet, $footerFlag);
+    $footer.append($footerSpan, $footerHeart, $footerRetweet, $footerFlag);
 
     return ($tweet);
   }

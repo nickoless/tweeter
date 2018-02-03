@@ -53,17 +53,23 @@
     font-size: 90%
 }
 
-.tweet footer img {
+.tweet footer svg {
     opacity: 0;
     float: right;
     height: 20px;
-    width: 20x;
+    width: 20px;
+    margin: 5px
+
 }
 
-.tweet:hover footer img {
+.tweet:hover footer svg {
     opacity: 100;
 }
 
+#likeCounter {
+    float:right;
+    background-color: #e8fdff;
+}
     
 /* Set up images in original tweet footer, opacity:0 */
 /* Separate hover state with opacity @ 100 */
