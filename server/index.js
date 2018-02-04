@@ -1,9 +1,6 @@
-require('dotenv').config();
-
-const MongoClient = require("mongodb").MongoClient;
-const MONGODB_URI = process.env.MONGODB_URI;er
-
 "use strict";
+
+require('dotenv').config();
 
 // Basic express setup:
 
@@ -30,7 +27,8 @@ app.use(express.static("public"));
 
 // Mongo DB
 
-
+const MongoClient = require("mongodb").MongoClient;
+const MONGODB_URI = process.env.MONGODB_URI;
 
 MongoClient.connect(MONGODB_URI, (err, db) => {
   if (err) {
