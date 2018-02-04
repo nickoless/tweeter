@@ -32,9 +32,15 @@ body {
 
 main {
   height: auto;
-  min-width: 450px;
+  min-width: auto;
   padding-top:140px;
   margin: 0 auto;
   background-color: white;
  }
+
+ @media (min-device-width: $desktopMin) {
+    main {
+      max-width: 450px;
+    }
+  }
 

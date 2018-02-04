@@ -58,18 +58,14 @@
     float: right;
     height: 20px;
     width: 20px;
-    margin: 5px
-
+    margin: 5px;
+    color: #2a6a6a
 }
 
 .tweet:hover footer svg {
     opacity: 100;
 }
 
-#likeCounter {
-    float:right;
-    background-color: #e8fdff;
-}
-    
+
 /* Set up images in original tweet footer, opacity:0 */
 /* Separate hover state with opacity @ 100 */
