@@ -1,13 +1,11 @@
 $( document ).ready(function() {
 
-// function to countdown from 140 for every entry in text field
-
   let maxCount = 140;
-  $( ".counter").html(maxCount);
+  $(".counter").html(maxCount);
 
-  $( "#textArea" ).on("input", function() {
-    let length = $(this).val().length;
-    let counter = $(this).parent().children(".counter");
+  $("#textArea").on("input", function() {
+    const length = $(this).val().length;
+    const counter = $(this).parent().children(".counter");
     counter.html(maxCount - length);
     if (length > maxCount) {
       counter.css("color", "red");
@@ -19,7 +17,7 @@ $( document ).ready(function() {
 // resets counter on form submission
 
   $(".new-tweet form").on("submit", function(event) {
-    $( ".counter").html(maxCount);
+    $(".counter").html(maxCount);
   });
 
 });

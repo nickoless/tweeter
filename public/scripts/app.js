@@ -1,7 +1,7 @@
 
 
 $(document).ready(function() {
-  
+
   // creates tweet based on HTML index, recreates DOM using Jquery --------
 
   function createTweetElement (tweetData) {
@@ -13,8 +13,7 @@ $(document).ready(function() {
     const $headerSpan = $("<span>").text(tweetData.user.handle);
     const $p = $("<p>").text(tweetData.content.text);
     const $footer = $("<footer>");
-    const timeStamp = (tweetData.created_at);
-    const $footerSpan = $("<span>").text(timeStamp);
+    const $footerSpan = $("<span>").text(moment(tweetData.created_at).fromNow());
     const $footerHeart = $("<i>").addClass("far fa-heart", "icon");
     const $footerFlag =  $("<i>").addClass("far fa-flag", "icon");
     const $footerRetweet = $("<i>").addClass("fas fa-retweet", "icon");
@@ -50,8 +49,6 @@ $(document).ready(function() {
       }
     });
   }
-
-  // When document is ready, load tweets as default
 
   loadTweets();
 
