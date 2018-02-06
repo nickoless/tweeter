@@ -19,5 +19,7 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Getting Started
 
-- Install all dependencies (using 'npm install' command).
-- Run the development web server using 'npm run local'
+1. Make note of the '.env.example' file and rename it to '.env'
+	- ensure that the '.env' file contains the following text: 'MONGODB_URI=mongodb://127.0.0.1:27017/tweeter'
+2. Install all dependencies (using 'npm install' command).
+3. Run the development web server using 'npm run local'
