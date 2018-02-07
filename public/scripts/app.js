@@ -62,7 +62,7 @@ $(document).ready(function() {
       alert("Your tweet is too long!");
       return false;
     } else {
-      $(".counter").html(maxCount);
+      $(".counter").html(140);
       const formData = $(this).serialize();
       $.post('/tweets', formData).done(function() {
         tweet.length = 0;
