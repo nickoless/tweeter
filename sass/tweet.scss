@@ -44,7 +44,9 @@
 }
 
 .tweet p {
-    margin: 40px 20px;
+    overflow-wrap: break-word;
+    height: auto;
+    margin: 2em;
 }
 
 .tweet footer {

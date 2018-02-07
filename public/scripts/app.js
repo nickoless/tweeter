@@ -1,5 +1,3 @@
-
-
 $(document).ready(function() {
 
   // creates tweet based on HTML index, recreates DOM using Jquery --------
@@ -59,10 +57,12 @@ $(document).ready(function() {
     let tweet = $("#textArea").val();
     if (tweet.trim().length === 0) {
       alert("Please enter a tweet");
-      console.log('test');
+      return false;
     } else if (tweet.length > 140) {
       alert("Your tweet is too long!");
+      return false;
     } else {
+      $(".counter").html(maxCount);
       const formData = $(this).serialize();
       $.post('/tweets', formData).done(function() {
         tweet.length = 0;
